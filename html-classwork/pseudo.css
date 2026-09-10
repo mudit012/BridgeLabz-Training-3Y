@@ -1,0 +1,28 @@
+.btn{
+
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+    border: 2px solid green;
+    cursor:pointer;
+}
+#name:focus{
+    border: 2px solid red;
+    outline: none;
+    border-radius: 5px;
+}
+.fruits{
+    background-color: yellow;
+}
+.fruits li:first-child{
+    background-color: red;
+
+}
+.fruits li:last-child{
+    background-color: green;
+}
+
+.fruits li:nth-child(3){
+    background-color: orange;
+}
