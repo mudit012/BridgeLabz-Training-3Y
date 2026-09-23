@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 10px solid black;
+    padding: 15px;
+    
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 10px solid black;
+    padding: 15px;
+    box-sizing: content-box;
+}
+.html{
+    font-size: 32px;
+}
+.box{
+    font-size: 64p;
+}
+
+.box p{
+    font-size: 2rem;
+}

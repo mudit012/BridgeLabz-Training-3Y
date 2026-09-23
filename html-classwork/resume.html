@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudit Tripathi - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+            line-height: 1.4;
+        }
+
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: white;
+            padding: 25px 35px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .contact {
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .contact a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        /* SECTIONS */
+        .section {
+            margin-top: 15px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #222;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        /* EDUCATION */
+        .education-item {
+            margin-bottom: 7px;
+        }
+
+        .education-item .title {
+            font-weight: bold;
+            font-size: 12.5px;
+        }
+
+        .education-item .details {
+            font-size: 12px;
+        }
+
+        /* EXPERIENCE / CERTIFICATION / PROJECT */
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 12.5px;
+        }
+
+        .item-title {
+            font-weight: bold;
+        }
+
+        .item-date {
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .item-subtitle {
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 1px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 3px;
+        }
+
+        li {
+            font-size: 11.5px;
+            margin-bottom: 2px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skills h3 {
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .skills p {
+            font-size: 11.5px;
+            margin-bottom: 3px;
+        }
+
+        /* ACHIEVEMENTS */
+        .achievement-list {
+            margin-left: 20px;
+        }
+
+        /* DECLARATION */
+        .declaration {
+            font-size: 11.5px;
+            text-align: justify;
+        }
+
+        /* PHOTO PLACEHOLDER */
+        .photo {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            width: 90px;
+            height: 110px;
+            border: 1px solid #777;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 10px;
+            color: #777;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                min-height: 297mm;
+            }
+
+            .photo {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <h1>Mudit Tripathi</h1>
+
+        <div class="contact">
+            Kannauj | +91-9235903482 | 
+            <a href="mailto:mudit.tripathi_cs24@gla.ac.in">
+                mudit.tripathi_cs24@gla.ac.in
+            </a>
+        </div>
+
+        <div class="contact">
+            LinkedIn:
+            <a href="https://linkedin.com/in/mudit-tripathi" target="_blank">
+                linkedin.com/in/mudit-tripathi
+            </a>
+            &nbsp; | &nbsp;
+
+            GitHub:
+            <a href="https://github.com/mudit-tripathi" target="_blank">
+                github.com/mudit-tripathi
+            </a>
+            &nbsp; | &nbsp;
+
+            TryHackMe:
+            <a href="https://tryhackme.com/mudit" target="_blank">
+                tryhackme.com/mudit
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- EDUCATION -->
+    <div class="section">
+
+        <div class="section-title">
+            Education
+        </div>
+
+        <div class="education-item">
+            <div class="title">
+                Bachelor of Technology in Computer Science, GLA University, Mathura
+            </div>
+            <div class="details">
+                Pursuing — Expected June 2028
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="title">
+                Intermediate, Subhash Academy
+            </div>
+            <div class="details">
+                70% — May 2024
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="title">
+                High School, Subhash Academy
+            </div>
+            <div class="details">
+                75% — May 2022
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+
+        <div class="section-title">
+            Certifications & Training
+        </div>
+
+        <div class="item">
+
+            <div class="item-header">
+                <span class="item-title">
+                    Cisco Networking Academy
+                </span>
+
+                <span class="item-date">
+                    2025
+                </span>
+            </div>
+
+            <div class="item-subtitle">
+                Networking Basics – Certified
+            </div>
+
+            <ul>
+                <li>
+                    Completed Networking Basics course covering fundamentals
+                    of network architecture, protocols, and data communication.
+                </li>
+
+                <li>
+                    Gained hands-on knowledge of Cisco networking concepts
+                    and device configurations.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="item">
+
+            <div class="item-header">
+                <span class="item-title">
+                    Palo Alto Networks
+                </span>
+
+                <span class="item-date">
+                    2025
+                </span>
+            </div>
+
+            <div class="item-subtitle">
+                Security Operations Fundamentals – Certified
+            </div>
+
+            <ul>
+                <li>
+                    Completed Security Operations Fundamentals covering SOC
+                    workflows, threat detection, and incident response.
+                </li>
+
+                <li>
+                    Gained knowledge of network security monitoring, SIEM
+                    tools, and Palo Alto security platforms.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="section">
+
+        <div class="section-title">
+            Projects
+        </div>
+
+        <div class="item">
+
+            <div class="item-header">
+                <span class="item-title">
+                    Authlytix – Authentication & Security System
+                </span>
+
+                <span class="item-date">
+                    2026
+                </span>
+            </div>
+
+            <div class="item-subtitle">
+                In Progress
+            </div>
+
+            <ul>
+                <li>
+                    Developing a secure authentication system with session
+                    tracking and role-based access control (RBAC). Group project.
+                </li>
+
+                <li>
+                    Implementing backend using FastAPI/Node.js with secure
+                    login, logging mechanisms, and attack prevention.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="item">
+
+            <div class="item-header">
+                <span class="item-title">
+                    Cybersecurity Hands-on Labs
+                </span>
+
+                <span class="item-date">
+                    2025
+                </span>
+            </div>
+
+            <ul>
+                <li>
+                    Executed Wi-Fi deauthentication attacks and handshake
+                    capture using Kali Linux tools.
+                </li>
+
+                <li>
+                    Built reverse shell payloads using Metasploit; conducted
+                    PE file analysis and system behavior inspection.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- SKILLS -->
+    <div class="section">
+
+        <div class="section-title">
+            Skills
+        </div>
+
+        <div class="skills">
+
+            <div>
+                <h3>Technical Skills</h3>
+
+                <p>Java, Python, SQL</p>
+
+                <p>
+                    Nmap, Burp Suite, Metasploit, Wireshark
+                </p>
+
+                <p>
+                    HTML, CSS, JavaScript, React, MySQL
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Professional Skills</h3>
+
+                <p>Penetration Testing</p>
+
+                <p>Bug Bounty Hunting</p>
+
+                <p>SOC Analysis</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ACHIEVEMENTS -->
+    <div class="section">
+
+        <div class="section-title">
+            Professional Achievements / Insights
+        </div>
+
+        <ul class="achievement-list">
+
+            <li>
+                Secured 5th Position in IIT Kanpur CTF competition at Tech
+                Kriti (prestigious national-level event).
+            </li>
+
+            <li>
+                Completed Cyber Security Mentorship Program (3 Months) and
+                Wipro Certified Program in cybersecurity domain.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- CO-CURRICULAR -->
+    <div class="section">
+
+        <div class="section-title">
+            Co-Curricular Activities
+        </div>
+
+        <ul class="achievement-list">
+
+            <li>
+                Active TryHackMe learner – completed hands-on cybersecurity
+                labs including Wi-Fi deauthentication, handshake capture,
+                reverse shell payload creation, and PE file analysis.
+            </li>
+
+            <li>
+                Actively practicing Data Structures and Algorithms on LeetCode;
+                built real-world vulnerability reports and security-focused
+                projects.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- DECLARATION -->
+    <div class="section">
+
+        <div class="section-title">
+            Declaration
+        </div>
+
+        <p class="declaration">
+            I hereby declare that all the above mentioned information is true
+            and correct to the best of my knowledge.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
