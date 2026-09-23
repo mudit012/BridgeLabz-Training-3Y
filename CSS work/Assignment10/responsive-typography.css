@@ -1,0 +1,51 @@
+/* ===== Reset & base ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #2d2d2d;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Typography section ===== */
+.typography-section {
+    max-width: 800px;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 2rem;
+}
+
+/* Fluid heading size: min 1.5rem, preferred 4vw, max 3rem */
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+    color: #0984e3;
+    line-height: 1.2;
+}
+
+/* Fluid paragraph size: min 1rem, preferred 2vw, max 1.5rem */
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+    color: #4b4b4b;
+}
+
+/* ===== Responsive: adjust spacing/line-height for small screens ===== */
+@media (max-width: 700px) {
+    .typography-section {
+        padding: 2rem 1rem;
+    }
+
+    p {
+        line-height: 1.8;
+        margin-top: 1rem;
+    }
+}
