@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Q6 - Table Filter</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+    th { background: #eee; }
+    #noResult { display: none; color: red; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Student Table</h2>
+  <input type="text" id="search" placeholder="Search students...">
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Branch</th><th>CGPA</th></tr>
+    </thead>
+    <tbody id="tableBody">
+      <tr><td>Aarav Sharma</td><td>CSE</td><td>8.7</td></tr>
+      <tr><td>Priya Singh</td><td>ECE</td><td>9.1</td></tr>
+      <tr><td>Rohan Verma</td><td>Mechanical</td><td>7.8</td></tr>
+      <tr><td>Sneha Gupta</td><td>CSE</td><td>8.9</td></tr>
+      <tr><td>Karan Mehta</td><td>Civil</td><td>7.5</td></tr>
+      <tr><td>Anjali Yadav</td><td>IT</td><td>8.4</td></tr>
+    </tbody>
+  </table>
+  <p id="noResult">No results found</p>
+  <script src="q6.js"></script>
+</body>
+</html>

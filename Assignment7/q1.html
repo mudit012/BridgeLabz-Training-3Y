@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 - Product List Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    ul { list-style: none; padding: 0; }
+    li { display: flex; align-items: center; gap: 8px; padding: 8px; border-bottom: 1px solid #ddd; }
+    li .name { flex: 1; }
+    li input.edit-box { flex: 1; }
+  </style>
+</head>
+<body>
+  <h2>Product List Manager</h2>
+  <input type="text" id="productInput" placeholder="Enter product name">
+  <button id="addBtn">Add</button>
+  <ul id="productList"></ul>
+  <script src="q1.js"></script>
+</body>
+</html>

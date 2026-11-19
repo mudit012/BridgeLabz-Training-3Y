@@ -1,0 +1,6 @@
+/* shared basic styling for all questions */
+body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 15px; }
+h2 { margin-bottom: 15px; }
+input, textarea, button { padding: 8px; font-size: 15px; margin: 4px 0; }
+button { cursor: pointer; }
+.error { color: red; font-size: 13px; min-height: 16px; }
