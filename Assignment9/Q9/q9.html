@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q9 - Multiple jQuery Versions</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.widget{background:#fff;border:2px solid var(--line);padding:14px;margin:12px 0}
+.widget.active{border-color:#16a34a;background:#f0fdf4}
+#carousel{position:relative;height:70px}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:#2563eb;color:#fff;border-radius:6px}
+#modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);align-items:center;justify-content:center}
+#modal .box{background:#fff;padding:20px;border-radius:8px;max-width:320px}
+#tip{display:none;position:absolute;background:#111827;color:#fff;padding:4px 8px;border-radius:4px;font-size:.8rem;z-index:10}
+</style>
+</head>
+<body>
+<header><h1>Dashboard (jQuery 1.12.4 + jQuery 3.7.1)</h1></header>
+<main>
+  <section class="widget" id="w1"><h2>Carousel (jQuery v1)</h2>
+    <div id="carousel"><div class="slide">Slide 1</div><div class="slide">Slide 2</div><div class="slide">Slide 3</div><div class="slide">Slide 4</div><div class="slide">Slide 5</div></div></section>
+  <section class="widget" id="w2"><h2>Notifications (jQuery v2)</h2>
+    <button id="openModal" class="has-tip" data-tip="Opens a notification popup">Show notification</button></section>
+  <section class="widget" id="w3"><h2>Stats</h2><p class="has-tip" data-tip="Visitors today: 1,204">Hover for tooltip</p></section>
+  <section class="widget" id="w4"><h2>Settings</h2><p class="has-tip" data-tip="Change your preferences">Hover for tooltip</p></section>
+  <section class="widget" id="w5"><h2>Reports</h2><p class="has-tip" data-tip="Download monthly report">Hover for tooltip</p></section>
+</main>
+<div id="modal"><div class="box"><h3>Notification</h3><p>You have 3 new messages.</p><button id="closeModal">Close</button></div></div>
+<div id="tip"></div>
+
+<!-- Load jQuery 1.x, then give back the $ and jQuery names with noConflict(true) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>var jq1 = jQuery.noConflict(true);</script>
+<!-- Load jQuery 3.x and do the same, so both live side by side as jq1 and jq2 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>var jq2 = jQuery.noConflict(true);</script>
+<script src="q9.js"></script>
+</body>
+</html>

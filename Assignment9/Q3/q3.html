@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q3 - Interactive FAQ</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.question{margin:0;cursor:pointer;padding:6px;border-radius:4px}
+.answer{display:none;padding:6px}
+.question.focused{background:#fef9c3}
+</style>
+</head>
+<body>
+<header><h1>Frequently Asked Questions</h1><p>Click a question to open it. Double-click any question to collapse all.</p></header>
+<main>
+  <section id="faq">
+    <div class="faq-item"><h3 class="question">How do I reset my password?</h3><div class="answer"><p>Use the "Forgot password" link on the login page.</p><input type="text" placeholder="Was this helpful? Tell us"></div></div>
+    <div class="faq-item"><h3 class="question">What payment methods are accepted?</h3><div class="answer"><p>Cards, UPI, net banking and cash on delivery.</p><input type="text" placeholder="Your comment"></div></div>
+    <div class="faq-item"><h3 class="question">How long does delivery take?</h3><div class="answer"><p>Usually 3-5 working days.</p><input type="text" placeholder="Your comment"></div></div>
+    <div class="faq-item"><h3 class="question">Can I return a product?</h3><div class="answer"><p>Yes, within 7 days of delivery.</p><input type="text" placeholder="Your comment"></div></div>
+    <div class="faq-item"><h3 class="question">How do I contact support?</h3><div class="answer"><p>Email support@example.com or call 1800-000-000.</p><input type="text" placeholder="Your comment"></div></div>
+  </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q3.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q6 - Event Subscriptions</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.topic{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.status{font-size:.85rem;padding:2px 8px;border-radius:10px;background:#e5e7eb}
+.status.on{background:#bbf7d0}
+.rm{background:#dc2626}
+</style>
+</head>
+<body>
+<header><h1>Event Subscriptions</h1></header>
+<main>
+  <section class="card">
+    <label for="newTopic">New topic:</label>
+    <input id="newTopic" type="text" placeholder="e.g. Hackathons">
+    <button id="addTopic">Add topic</button>
+  </section>
+  <div id="messages" aria-live="polite"></div>
+  <ul id="topics">
+    <li class="topic"><span class="title">Workshops</span><span class="status">Notifications off</span><span><button class="sub">Subscribe</button><button class="unsub">Unsubscribe</button><button class="rm">Remove</button></span></li>
+    <li class="topic"><span class="title">Webinars</span><span class="status">Notifications off</span><span><button class="sub">Subscribe</button><button class="unsub">Unsubscribe</button><button class="rm">Remove</button></span></li>
+    <li class="topic"><span class="title">Conferences</span><span class="status">Notifications off</span><span><button class="sub">Subscribe</button><button class="unsub">Unsubscribe</button><button class="rm">Remove</button></span></li>
+    <li class="topic"><span class="title">Meetups</span><span class="status">Notifications off</span><span><button class="sub">Subscribe</button><button class="unsub">Unsubscribe</button><button class="rm">Remove</button></span></li>
+    <li class="topic"><span class="title">Job Fairs</span><span class="status">Notifications off</span><span><button class="sub">Subscribe</button><button class="unsub">Unsubscribe</button><button class="rm">Remove</button></span></li>
+  </ul>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q6.js"></script>
+</body>
+</html>

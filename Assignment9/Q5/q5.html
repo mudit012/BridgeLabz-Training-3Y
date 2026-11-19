@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q5 - Team Directory</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.dept-head{display:flex;justify-content:space-between;align-items:center}
+.dept-title{cursor:pointer;margin:0}
+.member{display:block}
+.member .name{font-weight:600;cursor:pointer}
+.contact{display:none;color:#4b5563;font-size:.9rem;margin-left:8px}
+.manager .name::after{content:" (Manager)";font-weight:400;color:#6b7280}
+.hl{background:#bfdbfe}
+</style>
+</head>
+<body>
+<header><h1>Team Directory</h1><p>Click a manager or department title. Hover an employee for contact info.</p></header>
+<main>
+  <button id="randomBtn">Select random employee</button>
+  <section class="dept" data-dept="Engineering">
+    <div class="dept-head"><h2 class="dept-title">Engineering</h2><button class="collapse">Collapse / Expand</button></div>
+    <ul class="members">
+      <li class="member manager" data-id="asha"><span class="name">Asha Verma</span><span class="contact">asha@corp.com | Ext 101</span></li>
+      <li class="member employee" data-manager="asha"><span class="name">Rohit Singh</span><span class="contact">rohit@corp.com | Ext 102</span></li>
+      <li class="member employee" data-manager="asha"><span class="name">Neha Gupta</span><span class="contact">neha@corp.com | Ext 103</span></li>
+      <li class="member employee" data-manager="asha"><span class="name">Karan Mehta</span><span class="contact">karan@corp.com | Ext 104</span></li>
+      <li class="member employee" data-manager="asha"><span class="name">Pooja Rao</span><span class="contact">pooja@corp.com | Ext 105</span></li>
+    </ul>
+  </section>
+  <section class="dept" data-dept="Marketing">
+    <div class="dept-head"><h2 class="dept-title">Marketing</h2><button class="collapse">Collapse / Expand</button></div>
+    <ul class="members">
+      <li class="member manager" data-id="vikram"><span class="name">Vikram Joshi</span><span class="contact">vikram@corp.com | Ext 201</span></li>
+      <li class="member employee" data-manager="vikram"><span class="name">Sana Khan</span><span class="contact">sana@corp.com | Ext 202</span></li>
+      <li class="member employee" data-manager="vikram"><span class="name">Dev Patel</span><span class="contact">dev@corp.com | Ext 203</span></li>
+      <li class="member employee" data-manager="vikram"><span class="name">Ira Sharma</span><span class="contact">ira@corp.com | Ext 204</span></li>
+      <li class="member employee" data-manager="vikram"><span class="name">Tarun Das</span><span class="contact">tarun@corp.com | Ext 205</span></li>
+    </ul>
+  </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q5.js"></script>
+</body>
+</html>

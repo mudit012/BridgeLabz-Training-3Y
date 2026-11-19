@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q4 - Special Offer Banners</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.banner{color:#fff;font-weight:600}
+.b1{background:#2563eb}.b2{background:#db2777}.b3{background:#059669}.b4{background:#d97706}.b5{background:#7c3aed}
+#rotator{position:relative;height:80px}
+.slide{position:absolute;inset:0;display:none;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;border-radius:6px}
+</style>
+</head>
+<body>
+<header><h1>Special Offers</h1></header>
+<main>
+  <section aria-label="Controls" class="card">
+    <label for="target">Banner:</label>
+    <select id="target"><option value="all">All banners</option><option value="1">Banner 1</option><option value="2">Banner 2</option><option value="3">Banner 3</option><option value="4">Banner 4</option><option value="5">Banner 5</option></select>
+    <div>
+      <button data-act="hide">Hide</button><button data-act="show">Show</button>
+      <button data-act="slideUp">Slide Up</button><button data-act="slideDown">Slide Down</button>
+      <button data-act="fadeOut">Fade Out</button><button data-act="fadeIn">Fade In</button>
+    </div>
+  </section>
+  <section id="banners">
+    <div class="banner b1" data-id="1">Flat 20% off on electronics</div>
+    <div class="banner b2" data-id="2">Buy 1 Get 1 free on fashion</div>
+    <div class="banner b3" data-id="3">Free delivery above Rs. 499</div>
+    <div class="banner b4" data-id="4">Festive sale - up to 60% off</div>
+    <div class="banner b5" data-id="5">Extra 10% off with UPI</div>
+  </section>
+  <h2>Auto-rotating banner</h2>
+  <section id="rotator">
+    <div class="slide b1">Flat 20% off on electronics</div>
+    <div class="slide b2">Buy 1 Get 1 free on fashion</div>
+    <div class="slide b3">Free delivery above Rs. 499</div>
+    <div class="slide b4">Festive sale - up to 60% off</div>
+    <div class="slide b5">Extra 10% off with UPI</div>
+  </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q4.js"></script>
+</body>
+</html>

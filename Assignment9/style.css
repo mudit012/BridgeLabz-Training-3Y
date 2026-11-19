@@ -1,0 +1,16 @@
+/* Shared styles for Assignment 9 */
+:root{--ink:#1f2937;--bg:#f5f7fa;--card:#fff;--accent:#2563eb;--line:#d1d5db;--hl:#fde68a;}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);margin:0;line-height:1.5}
+header,main,footer{max-width:860px;margin:0 auto;padding:16px 20px}
+header h1{margin:0;font-size:1.6rem}
+section,article,li{border-radius:6px}
+button{background:var(--accent);color:#fff;border:0;padding:8px 14px;border-radius:6px;cursor:pointer;margin:3px}
+button:hover{filter:brightness(1.1)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #93c5fd}
+input,select{padding:8px;border:1px solid var(--line);border-radius:6px;margin:3px}
+ul{list-style:none;padding:0}
+.card,.product,.faq-item,.banner,.course,.post,.topic,.member{background:var(--card);border:1px solid var(--line);padding:12px 14px;margin:10px 0}
+.msg{padding:8px 12px;background:#dcfce7;border:1px solid #86efac;margin:8px 0;border-radius:6px}
+.error{color:#b91c1c;font-size:.9rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

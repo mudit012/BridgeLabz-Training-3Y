@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q8 - Dynamic Blog Posts</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.post.selected{outline:2px solid var(--accent)}
+.tag{display:inline-block;background:#e0e7ff;color:#3730a3;padding:2px 8px;border-radius:10px;font-size:.8rem;margin:2px}
+.post.kw{background:#fef08a}
+</style>
+</head>
+<body>
+<header><h1>Blog Admin Panel</h1><p>Click a post to select it before adding tags.</p></header>
+<main>
+  <section class="card">
+    <button id="addPost">Add New Post</button>
+    <button id="prependPost">Prepend Featured Post</button>
+    <button id="removePost">Remove Last Post</button>
+    <div>
+      <input id="tagText" type="text" placeholder="Tag name">
+      <button id="tagBefore">Tag before title</button>
+      <button id="tagAfter">Tag after text</button>
+    </div>
+    <div>
+      <input id="keyword" type="text" placeholder="Keyword">
+      <button id="highlightBtn">Highlight posts</button>
+    </div>
+  </section>
+  <section id="posts">
+    <article class="post"><h3>Getting Started with jQuery</h3><p>jQuery makes DOM manipulation simple.</p></article>
+    <article class="post"><h3>CSS Grid Tips</h3><p>Build layouts quickly with grid.</p></article>
+    <article class="post"><h3>JavaScript Closures</h3><p>Understand scope and closures.</p></article>
+    <article class="post"><h3>Responsive Design</h3><p>Make sites work on every screen.</p></article>
+    <article class="post"><h3>Web Accessibility</h3><p>Design for everyone.</p></article>
+  </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q8.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q2 - Product Highlight</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.product{cursor:pointer;position:relative}
+.product.highlight{background:#dbeafe}
+.product.discount{border:2px dashed #16a34a}
+.product.discount h3::after{content:" - SALE";color:#16a34a;font-size:.8rem}
+.product .details{display:none;color:#4b5563}
+.fav{background:transparent;color:#9ca3af;font-size:1.4rem;position:absolute;right:8px;top:6px}
+.fav.selected{color:#dc2626}
+</style>
+</head>
+<body>
+<header><h1>Our Products</h1><p>Click to highlight, hover for details, tap the heart to favourite.</p></header>
+<main>
+  <section id="products">
+    <article class="product" data-discount="true" data-stock="12"><h3>Wireless Headphones</h3><p>Rs. 2,499</p><button class="fav" aria-label="Favorite">&#9829;</button><p class="details">Bluetooth 5.0, 30h battery, noise isolation.</p></article>
+    <article class="product" data-discount="false" data-stock="0"><h3>Smart Watch</h3><p>Rs. 4,999</p><button class="fav" aria-label="Favorite">&#9829;</button><p class="details">Heart-rate monitor, GPS, 7-day battery.</p></article>
+    <article class="product" data-discount="true" data-stock="5"><h3>Laptop Backpack</h3><p>Rs. 1,299</p><button class="fav" aria-label="Favorite">&#9829;</button><p class="details">Water resistant, 25L, USB charging port.</p></article>
+    <article class="product" data-discount="false" data-stock="20"><h3>Mechanical Keyboard</h3><p>Rs. 3,199</p><button class="fav" aria-label="Favorite">&#9829;</button><p class="details">Blue switches, RGB backlight, full size.</p></article>
+    <article class="product" data-discount="true" data-stock="0"><h3>Desk Lamp</h3><p>Rs. 799</p><button class="fav" aria-label="Favorite">&#9829;</button><p class="details">LED, 3 brightness levels, flexible neck.</p></article>
+  </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q2.js"></script>
+</body>
+</html>

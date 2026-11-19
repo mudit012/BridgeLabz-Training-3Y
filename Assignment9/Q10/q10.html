@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q10 - Registration Validation</title>
+<link rel="stylesheet" href="../style.css">
+<style>label{display:block;margin-top:10px}input{width:100%;max-width:360px}</style>
+</head>
+<body>
+<header><h1>Register</h1><p>Emails already taken: admin@site.com, user@site.com, test@site.com</p></header>
+<main>
+  <form id="regForm" novalidate class="card">
+    <label for="name">Name</label><input id="name" type="text"><span class="error" id="nameErr"></span>
+    <label for="email">Email</label><input id="email" type="email"><span class="error" id="emailErr"></span>
+    <label for="password">Password (min 8 characters)</label><input id="password" type="password"><span class="error" id="passErr"></span>
+    <p><button type="submit">Register</button></p>
+  </form>
+  <div id="result" aria-live="polite"></div>
+</main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q10.js"></script>
+</body>
+</html>
