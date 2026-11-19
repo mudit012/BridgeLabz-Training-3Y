@@ -1,0 +1,11 @@
+/* shared styling for the form based questions */
+body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; padding: 0 15px; }
+h2 { margin-bottom: 15px; }
+label { display: block; margin-top: 10px; font-weight: bold; }
+input { width: 100%; box-sizing: border-box; padding: 8px; font-size: 15px; margin-top: 4px; border: 2px solid #ccc; border-radius: 4px; }
+button { padding: 8px 16px; margin-top: 12px; font-size: 15px; cursor: pointer; }
+input.invalid { border-color: red; }
+input.valid { border-color: green; }
+.error { color: red; font-size: 13px; min-height: 16px; }
+.success { color: green; font-weight: bold; margin-top: 12px; }
+.box { background: #f2f2f2; padding: 12px; margin-top: 15px; border-radius: 6px; }
